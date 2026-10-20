@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contenedor principal vertical que organiza todos los elementos de la pantalla de inicio -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="28dp"
+    android:background="#F8FAFC"
+    tools:context=".MainActivity">
+
+    <!-- Título principal de la aplicación -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MiniMarket Go"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#17324D" />
+
+    <!-- Imagen del logo o marca del minimarket -->
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_margin="24dp"
+        android:src="@drawable/market" />
+
+    <!-- Subtítulo con mensaje eslogan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tus compras, de forma simple"
+        android:textSize="18sp"
+        android:textColor="#657786" />
+
+    <!-- Mensaje descriptivo de instrucciones para el usuario -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Selecciona tus productos y revisa el total."
+        android:textColor="#657786" />
+
+    <!-- Botón para iniciar el flujo de compra y navegar a PedidoActivity -->
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="INICIAR COMPRA"
+        android:backgroundTint="#D46B37"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

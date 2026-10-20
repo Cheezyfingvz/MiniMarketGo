@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contenedor principal vertical para la pantalla de resumen / boleta de compra -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F8FAFC"
+    tools:context=".ResumenActivity">
+
+    <!-- Título del resumen -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resumen de compra"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#17324D" />
+
+    <!-- Subtítulo de la sección de detalle -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detalle del pedido"
+        android:textColor="#657786"
+        android:layout_marginBottom="18dp" />
+
+    <!-- Muestra el desglose de cada producto seleccionado con su cantidad, precio unitario y subtotal -->
+    <TextView
+        android:id="@+id/tvProductos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="#17324D" />
+
+    <!-- Muestra el monto del Subtotal general -->
+    <TextView
+        android:id="@+id/tvSubtotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textSize="17sp" />
+
+    <!-- Muestra el monto del IVA (19%) -->
+    <TextView
+        android:id="@+id/tvIva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp" />
+
+    <!-- Muestra el costo del servicio de Delivery ($0 o $2.500) -->
+    <TextView
+        android:id="@+id/tvDelivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp" />
+
+    <!-- Muestra el valor Total final a pagar resaltado en negrita y color de acento -->
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#D46B37" />
+
+</LinearLayout>

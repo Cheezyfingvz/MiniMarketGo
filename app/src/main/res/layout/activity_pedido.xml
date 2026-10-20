@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contenedor principal vertical para la pantalla de selección e ingreso del pedido -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F8FAFC"
+    tools:context=".PedidoActivity">
+
+    <!-- Título de la pantalla -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arma tu pedido"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#17324D" />
+
+    <!-- Subtítulo instructivo para el ingreso de cantidades -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa la cantidad que deseas comprar"
+        android:textColor="#657786"
+        android:layout_marginBottom="18dp" />
+
+    <!-- ===== PRODUCTO 1: BEBIDA ===== -->
+    <!-- Imagen ilustrativa de la bebida -->
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:src="@drawable/bebida" />
+
+    <!-- Nombre y precio unitario de la bebida -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bebida  $1.500"
+        android:textStyle="bold" />
+
+    <!-- Campo de entrada numérico para la cantidad de bebidas -->
+    <EditText
+        android:id="@+id/etBebida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad bebida"
+        android:inputType="number" />
+
+    <!-- ===== PRODUCTO 2: PAN ===== -->
+    <!-- Imagen ilustrativa del pan -->
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:src="@drawable/pan" />
+
+    <!-- Nombre y precio unitario del pan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pan  $1.200"
+        android:textStyle="bold" />
+
+    <!-- Campo de entrada numérico para la cantidad de pan -->
+    <EditText
+        android:id="@+id/etPan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad pan"
+        android:inputType="number" />
+
+    <!-- ===== PRODUCTO 3: LECHE ===== -->
+    <!-- Imagen ilustrativa de la leche -->
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:src="@drawable/leche" />
+
+    <!-- Nombre y precio unitario de la leche -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leche  $1.300"
+        android:textStyle="bold" />
+
+    <!-- Campo de entrada numérico para la cantidad de leche -->
+    <EditText
+        android:id="@+id/etLeche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad leche"
+        android:inputType="number" />
+
+    <!-- ===== OPCIÓN ADICIONAL: DELIVERY ===== -->
+    <!-- Casilla de selección opcional para incluir servicio de envío por $2.500 -->
+    <CheckBox
+        android:id="@+id/chkDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar delivery $2.500" />
+
+    <!-- Botón para calcular valores, validar y avanzar a ResumenActivity -->
+    <Button
+        android:id="@+id/btnResumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VER RESUMEN"
+        android:backgroundTint="#D46B37"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Archivo de manifiesto principal que registra los componentes y configuraciones de la app -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Configuración general de la aplicación -->
+    <application
+        android:theme="@style/AppTheme"
+        android:label="MiniMarket Go">
+
+        <!-- Declaración de la pantalla de Resumen -->
+        <activity android:name=".ResumenActivity" />
+
+        <!-- Declaración de la pantalla de Pedido -->
+        <activity android:name=".PedidoActivity" />
+
+        <!-- Declaración de la pantalla de Inicio como la primera pantalla que abre la app (LAUNCHER) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

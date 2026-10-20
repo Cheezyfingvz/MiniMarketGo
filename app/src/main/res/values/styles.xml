@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo global del tema visual de la aplicación -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Tipo de fuente tipográfica -->
+        <item name="android:fontFamily">sans</item>
+        <!-- Color secundario/de acento para botones y controles activos (Naranja #D46B37) -->
+        <item name="android:colorAccent">#D46B37</item>
+        <!-- Color de la barra de navegación del sistema Android (Azul #17324D) -->
+        <item name="android:navigationBarColor">#17324D</item>
+        <!-- Color de la barra de estado superior del sistema Android (Azul #17324D) -->
+        <item name="android:statusBarColor">#17324D</item>
+    </style>
+</resources>
